@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.menu{
+  display: flex;
+  list-style-type: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li a{
+  margin-right: 15px;
+  text-decoration: none;
+  color: grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.active{
+  color: red !important;
+  text-decoration: underline !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slider{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.container{
+  display: block;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.slider_inner{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 100px;
 }
-
-.App-link {
-  color: #61dafb;
+.tours_text{
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 21px;
+  color: #343434;
+  margin-bottom: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons_arrow{
+  display: flex;
+  justify-content: end;
+  min-height: 45px;
+}
+.right_btn{
+  width: 40px;
+  height: 42px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: 0;
+  margin-left: 50px;
+  margin-top: -550px;
+}
+.left_btn{
+  width: 40px;
+  height: 42px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: 0;
+  margin-right: 45px;
+  margin-bottom:21px;
+}
+.cards_slider{
+  display: flex;
+}
+.top_slider{
+  display: flex;
 }
